@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: polaris-app
+server:
+  port: 8090
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://192.168.137.1:8761/eureka/,http://192.168.137.1:8762/eureka/
