@@ -13,8 +13,12 @@ feign:
         loggerLevel: basic
 
 eureka:
+  instance:
+    preferIpAddress: true
   client:
+    fetch-registry: true
+    register-with-eureka: false
     healthcheck:
       enabled: true
     serviceUrl:
-      defaultZone: http://192.168.137.1:8761/eureka/,http://192.168.137.1:8762/eureka/
+      defaultZone: http://primary:8761/eureka/,http://secondary:8762/eureka/

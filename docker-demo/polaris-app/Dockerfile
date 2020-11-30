@@ -1,4 +1,4 @@
-FROM oracle/openjdk:8
+FROM openjdk:8
 
 WORKDIR /opt
 VOLUME /tmp
