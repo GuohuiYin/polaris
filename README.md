@@ -20,19 +20,7 @@ Spring cloud based docker demo application with below points
 
 - Port
 
-### auth-service
-
-- Functionality
-
-- Port
-
 ### order-service
-
-- Functionality
-
-- Port
-
-### payment-service
 
 - Functionality
 
