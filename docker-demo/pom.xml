@@ -12,7 +12,6 @@
         <module>order-service</module>
         <module>polaris-app</module>
         <module>service-registration-center</module>
-        <module>auth-center</module>
     </modules>
 
     <properties>
