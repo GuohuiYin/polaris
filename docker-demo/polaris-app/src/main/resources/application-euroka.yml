@@ -1,0 +1,10 @@
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetch-registry: true
+    register-with-eureka: false
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://primary:8761/eureka/,http://secondary:8762/eureka/

@@ -12,6 +12,7 @@
         <module>order-service</module>
         <module>polaris-app</module>
         <module>service-registration-center</module>
+        <module>auth-center</module>
     </modules>
 
     <properties>
@@ -19,7 +20,7 @@
         <spring-cloud-dependencies.version>Hoxton.RELEASE</spring-cloud-dependencies.version>
         <spring-boot-dependencies.version>2.2.1.RELEASE</spring-boot-dependencies.version>
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
-        <docker.image.prefix>docker.polaris.com</docker.image.prefix>
+        <docker.image.prefix>polaris952</docker.image.prefix>
         <dockerfile-maven-plugin.version>1.4.13</dockerfile-maven-plugin.version>
         <spring-boot-maven-plugin.version>2.2.2.RELEASE</spring-boot-maven-plugin.version>
     </properties>
