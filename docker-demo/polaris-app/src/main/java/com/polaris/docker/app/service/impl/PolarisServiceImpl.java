@@ -13,6 +13,9 @@ public class PolarisServiceImpl implements PolarisService {
     OrderService orderService;
 
     public String purchase(PurchaseParameter purchaseParameter) {
+        if ("1000".equals(purchaseParameter.getUserId())) {
+            throw new UnsupportedOperationException("user cannot be supported");
+        }
         String order = orderService.order(purchaseParameter.getProduct(),
                 purchaseParameter.getQuantity(), purchaseParameter.getPrice());
 
