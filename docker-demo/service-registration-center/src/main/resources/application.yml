@@ -42,4 +42,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://primary:8761/eureka/
-

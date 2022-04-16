@@ -17,12 +17,11 @@ public class OrderController {
 
     @ApiOperation(value = "order process for specified product")
     @GetMapping(value = "/place/{product}/{quantity}/{price}")
-    public String order(@PathVariable String product,
+    public Integer order(@PathVariable String product,
                         @PathVariable Integer quantity,
                         @PathVariable Double price) {
         logger.info("order process");
 
-        String response = "order for product %s got placed with quantity %s for price %s";
-        return String.format(response, product, quantity, price);
+        return 1;
     }
 }
