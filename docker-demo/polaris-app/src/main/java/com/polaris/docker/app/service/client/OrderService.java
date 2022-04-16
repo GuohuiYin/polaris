@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient("order-svc")
+@FeignClient(value = "order-svc", url = "http://order-svc:8080")
 public interface OrderService {
     @RequestMapping(value = "/order/place/{product}/{quantity}/{price}", method = RequestMethod.GET)
     Integer order(@PathVariable(value = "product") String product,
