@@ -5,8 +5,8 @@ import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
 
-@ApiModel(value = "PurchaseParameter", description = "parameter for purchase request")
-public class PurchaseParameter implements Serializable {
+@ApiModel(value = "PurchaseRequest", description = "Purchase request")
+public class PurchaseRequest implements Serializable {
     private static final long serialVersionUID = -7961100328981674043L;
 
     @ApiModelProperty(value = "user id", required = true, example = "1234")

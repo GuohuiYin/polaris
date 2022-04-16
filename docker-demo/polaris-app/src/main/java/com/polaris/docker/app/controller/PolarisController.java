@@ -1,6 +1,6 @@
 package com.polaris.docker.app.controller;
 
-import com.polaris.docker.app.model.PurchaseParameter;
+import com.polaris.docker.app.model.PurchaseRequest;
 import com.polaris.docker.app.service.PolarisService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -17,7 +17,7 @@ public class PolarisController {
 
     @ApiOperation(value = "purchase specified product")
     @PostMapping(value = "/purchase")
-    public String purchase(@RequestBody PurchaseParameter purchaseParameter) {
-        return polarisService.purchase(purchaseParameter);
+    public String purchase(@RequestBody PurchaseRequest purchaseRequest) {
+        return polarisService.purchase(purchaseRequest);
     }
 }

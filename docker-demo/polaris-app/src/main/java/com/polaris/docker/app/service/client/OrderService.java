@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient("order-svc")
 public interface OrderService {
     @RequestMapping(value = "/order/place/{product}/{quantity}/{price}", method = RequestMethod.GET)
-    String order(@PathVariable(value = "product") String product,
+    Integer order(@PathVariable(value = "product") String product,
                  @PathVariable(value = "quantity") Integer quantity,
                  @PathVariable(value = "price") Double price);
 }
