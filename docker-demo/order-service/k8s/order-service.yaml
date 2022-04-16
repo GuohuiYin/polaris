@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-svc-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: order-app
+  template:
+    metadata:
+      labels:
+        app: order-app
+    spec:
+      containers:
+        - name: order-app
+          image: polaris952/order-service:latest
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-svc
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    name: order-app

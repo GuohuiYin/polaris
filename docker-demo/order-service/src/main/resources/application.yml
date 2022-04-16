@@ -2,13 +2,4 @@ spring:
   application:
     name: order-svc
 server:
-  port: 8091
-
-eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    healthcheck:
-      enabled: true
-    serviceUrl:
-      defaultZone: http://primary:8761/eureka/,http://secondary:8762/eureka/
+  port: 8080
